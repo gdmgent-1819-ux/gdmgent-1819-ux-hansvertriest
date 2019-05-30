@@ -1,0 +1,119 @@
+
+@import "variables.css";
+
+h1{
+    color:black;
+    font-family: var(--f-h1);
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+h2{
+    color:var(--c-rood-bruin);
+    font-family: var(--f-h2);
+    font-weight: 400;
+    line-height: 25px;
+}
+.tekst{
+    margin:0 0 .75em 0;
+    color:  var(--c-tekst);
+    font-family: var(--f-tekst);
+    font-weight:300;
+    line-height: 22px;
+}
+.labelTekst{
+    color:  var(--c-tekst);
+    font-family: var(--f-labelTekst);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.labelTekst strong {
+    font-weight: bold;
+}
+a{
+    font-family: var(--f-meerInfo);
+    text-decoration: none;
+}
+.meerInfo {
+    font-size: 12px;
+    font-family: var(--f-meerInfo);
+    font-weight: bold;
+    color: var(--c-paars);
+    text-align: center;
+}
+.navTekst{
+    font-size: 14px;
+    font-family: var(--f-navTekst);
+    color: var(--c-donker-grijs);
+}
+.footerTekst{
+    font-size: 14px;
+    font-family: var(--f-footerTekst);
+    color:var(--c-donker-grijs)
+}
+.kleineLettertjes{
+    font-size: 13px;
+    font-family: var(--f-kleineLettertjes);
+    color:var(--c-donker-grijs);
+    text-align: center;
+}
+.footerH2{
+    font-family: var(--f-h2);
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 18px;
+    color: var(--c-donker-grijs);
+}
+.prijs{
+    font-family: var(--f-prijs);
+    font-size: 45px;
+    color:var(--c-tekst);
+    margin:0;
+}
+
+.details{
+    font-size: 15px;
+    font-family: var(--f-details);
+    color: var(--c-tekst);
+    font-weight: 400;
+}
+
+
+@media (max-width: 414px){
+    h1{
+        font-size: 25px;
+        line-height: 30px
+    }
+    h2{
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 0px;
+    }
+    .tekst{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .labelTekst{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .labelTekst em {
+        font-weight: bold;
+    }
+    .navMobTekst{
+        font-family: var(--f-navMobTekst);
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--c-bruin-donker);
+    }
+    .navMobSubTekst{
+        font-family: var(--f-navMobSubTekst);
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--c-donker-grijs);  
+    }
+    .footerTekst{
+        font-size: 13px;
+    }
+}

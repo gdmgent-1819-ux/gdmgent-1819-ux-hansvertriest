@@ -1,17 +1,301 @@
-.sg-title {
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: #333;
-    margin: 1rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+body{
+    background-color: var(--c-header);
+    padding: 30px 100px;
 }
 
-.sg-subtitle {
-    font-size: 1rem;
-    border-bottom: solid 1px #aaa;
+.noStyle{
+    text-align: center;
+    font-family: 'raleway';
+    margin-top:80px;
+    margin-bottom: 40px;
+    font-size: 100px;
+    text-shadow: 0px 4px white;
+}
+/* BUTTONS */
+.buttons{
+    background-color: white;
+    padding: 20px;
+    
+}
+.buttonLeesMeer{
+    display:flex;
+}
+.buttonLeesMeer *{
+    margin:20px;
+}
+.buttonLeesMeer .hover{
+    background-color: var(--c-header);
+    
+}
+.buttonLeesMeer .active{
+    box-shadow: 0 -3px  var(--c-header);
+    
+}
+.buttonBoeken{
+    display:flex;
+}
+.buttonBoeken *{
+    margin:20px;
+}
+.buttonBoeken .hover{
+    box-shadow:  inset 0 -3px 0 var(--c-rood-donker);
+}
+.buttonBoeken .active{
+    box-shadow: 0 -3px  var(--c-rood-donker);
+}
+
+
+
+
+.componenten{
+    display:flex;
+    align-items: center;
+    flex-direction: column
+}
+.componenten > *{
+    margin-top: 30px;
+}
+/* PRIJS + BOEKEN */
+.boekBar{
+    background-color: white;
+    padding: 20px 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+.prijsDiv{
+    display:flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.kleineLetterPrijs{
+    font-family: 'Roboto';
+    font-size: 10px;
+    color: var(--c-bruin);
+    margin:0;
+}
+.prijsPerNacht{
+    display:flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: var(--c-bruin);
+}
+.prijsPerNacht p:first-child{
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: var(--c-tekst);
+    margin:0;
+}
+
+.boekButton{
+    margin:0;
+    width: 200px;
+    max-height: 50px;
+}
+.boekButton .btnTitle{
+    margin: auto auto;
+    
+}
+
+.boekButton .btnTitle p{
+    padding: 10px;
+}
+
+/* AcomodatieKaart */
+h3{
+    color: var(--c-blauw-donker);
+    font-family: 'Roboto';
+    font-size: 24px;
     font-weight: 400;
-    color: #666;
-    text-transform: uppercase;
-    margin: 2rem 0 .5rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin:0;
+}
+.accomodatieKaart{
+    display:flex;
+    justify-content:space-between;
+    background-color: white;
+    width: 794px;
+    height: 230px;
+    border-radius: 4px;
+}
+.accomodatieKaart .kaartImg{
+    width: 389px;
+    background-image: url('../assets/fotos/tent.jpg');
+    background-size: cover;
+    border-radius: 4px  0 0  4px  ;
+}
+.kaartGedeelte{
+    margin: 20px 20px;
+    width: 400px;
+}
+.kopstuk{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.labels img{
+    width: 40px;
+}
+.laagstuk{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.kaartGedeelte .tekstGedeelte{
+    width: 80%;
+}
+
+
+/* coachLabel */
+.coachLabel .kopstuk{
+    display:flex;
+}
+.coachLabel{
+    width: 454px;
+    background-color: var(--c-donker-grijs);
+    padding: 10px;
+}
+.coachPic img{
+    width: 113px;
+    border-radius: 50%;
+    border: 2px solid var(--c-tekst);
+}
+.coachTekstDiv{
+    display:flex;
+    color:var(--c-tekst);
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 600;
+}
+.fa-quote-left{
+    align-self: flex-start;
+}
+.fa-quote-right{
+    align-self: flex-end;
+}
+.coachLabel a {
+    display:block;
+    text-align: right;
+}
+.coachLabel .coachTekstDiv i{
+    margin: 3px;
+}
+
+/* RESERVERING OPTIES */
+.reservering{
+    width:650px;
+    background-color: var(--c-achtergrond);
+    padding: 50px;
+}
+.reservering .opties .datums{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.reservering .opties .datums div div{
+    display:flex;
+    flex-direction: row;
+    width: 250px;
+}
+.reservering .opties .datums div div i{
+    background-color: var(--c-bruin);
+    border-radius:4px;
+    box-shadow: 0 3px  var(--c-header);
+    padding: 8px 10px;
+    color: var(--c-achtergrond);
+    font-size: 20px;
+    margin-left: 15px;
+}
+.reservering .opties .datums div div i:hover{
+    background-color: var(--c-header);
+}
+.reservering .opties .datums div div i:active{
+    box-shadow: 0 -3px  var(--c-header);
+}
+.reservering .opties .datums input{
+    border-radius: 4px;
+    border: 1px solid var(--c-header);
+    height: 35px;
+    width: 180px;
+    margin-left: 30px;
+}
+.reservering .opties .datums div{
+    display:flex; 
+    flex-direction: column;
+
+}
+
+
+
+.reservering .opties .typeAccomodatie{
+    margin-bottom: 30px;
+}
+.reservering .opties .typeAccomodatie div{
+    display:flex;
+    align-items: center;
+    margin-left: 20px;
+
+}
+.reservering .opties .typeAccomodatie div .details{
+    display:inline-block;
+    margin:0;
+    padding: 5px 0;
+    padding-left: 15px;
+}
+
+
+.reservering .opties .extras{
+    margin-bottom: 30px;
+}
+.reservering .opties .extras div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.reservering .opties .extras div .details{
+    margin: 4px;
+}
+.reservering .opties .extras div i{
+    color: var(--c-bruin);
+    margin: auto 0;
+    margin-right: 30px;
+    font-size: 20px;
+}
+.reservering .opties .extras div .rood{
+    color: var(--c-rood);
+}
+.reservering .opties .extras div{
+    display:flex;
+}
+.reservering .opties .extras hr{
+    margin: 0;
+}
+.reservering .opties .extras div .bruin{
+    justify-self: flex-end;
+    color: var(--c-header);
+}
+
+form .leesMeerBttn{
+    width: 200px;
+    padding: 1px;
+    text-align: center;
+}
+
+/* FOTO */
+.foto > img{
+    width: 600px;
+    border-radius:4px 4px 0 0 ; 
+}
+.foto .kleineFotos{
+    display:flex;
+    justify-content: space-between;
+    width: 600px;
+}
+.foto .kleineFotos *{
+    width: 100px;
+    height: 60px;
+    border-radius: 1px solid var(--c-header);
 }

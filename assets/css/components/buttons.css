@@ -1,0 +1,133 @@
+@import "../variables.css";
+
+/* BOEK BUTTON */
+.boekButton {
+    background-color: var(--c-rood);
+    border-radius: 4px;
+    box-shadow: 0 3px  var(--c-rood-donker);
+    margin-top: 15px;
+    text-decoration: none;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boekButton:hover {
+    box-shadow:  inset 0 -3px 0 var(--c-rood-donker);
+}
+.boekButton:active {
+    box-shadow: 0 -3px  var(--c-rood-donker);
+}
+/* LEES MEER BUTTON */
+.boekButton .btnTitle p{
+    color:var(--c-achtergrond);
+    padding: 25px;
+    margin:0;
+}
+
+.leesMeerBttn{
+    background-color: var(--c-bruin);
+    border-radius:4px;
+    box-shadow: 0 3px  var(--c-header);
+}
+
+.leesMeerBttn:hover{
+    background-color: var(--c-header);
+}
+.leesMeerBttn:active {
+    box-shadow: 0 -3px  var(--c-header);
+}
+
+
+
+.leesMeerBttn .btnTitle{
+    color: var(--c-achtergrond);
+    font-weight: 400;
+    margin: 7px 20px;    
+    font-family:'Roboto';
+}
+.leesMeerBttn .btnTitle p{
+    margin:0;
+}
+/* schuifBttn */
+.schuifKnoppen{
+    display:flex;
+    justify-content: center;
+}
+.schuifBttn{
+    margin: 3px;
+    background-color: white;
+    border-radius: 29px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.schuifBttn .witGedeelte{
+    text-align:center;
+    width: 55%;
+}
+.schuifBttn .bruinGedeelte{
+    background-color: var(--c-bruin);
+    border-radius: 29px;
+    width: 45%;
+    display:flex;
+    justify-content:center;
+}
+.bttnTekst{
+    color:white;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+}
+.donker{
+    color: var(--c-tekst);
+    text-align: center;
+}
+.kamperen .witGedeelte{
+    width: 45%;
+}
+.kamperen .bruinGedeelte{
+    width: 55%;
+}
+
+/* QUICKACCESBUTTON */
+
+.quickAccesCard .quickAccesButton{
+    display:flex;
+    margin-top: 15px;
+    background-color: var(--c-donker-grijs);
+    border-radius: 6px;
+    box-shadow: 0 2px 0 var(--c-bruin);
+    text-decoration: none;
+}
+.quickAccesCard .quickAccesButton:hover{
+    box-shadow:  inset 0 -3px 0 var(--c-bruin);
+}
+.quickAccesCard .quickAccesButton:active{
+    box-shadow: 0 -2px 0 var(--c-bruin);
+}
+.quickAccesCard .quickAccesButton .icon{
+    margin: auto 0px;
+    font-size: 35px;
+    background-color: var(--c-bruin);
+    padding: 6px 20px;
+    border-radius: 6px 0 0 6px;
+    color: var(--c-donker-grijs);
+}
+.quickAccesCard .quickAccesButton .btnTitle, .quickAccesCard .boekButton .btnTitle{
+    margin: auto auto;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 0px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 414px){
+    .quickAccesCard .quicAccesButton{
+        margin-top: 8px;
+    }
+    .quickAccesCard .quicAccesButton .btnTitle{
+        font-size: 17px;
+    }
+}

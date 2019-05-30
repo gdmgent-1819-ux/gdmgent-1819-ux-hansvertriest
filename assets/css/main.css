@@ -1,9 +1,359 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-
 @import url('variables.css');
-@import url('base.css');
-
-@import url('components/flex-grid.css');
+@import url('components/grid.css');
 @import url('components/buttons.css');
-@import url('components/forms.css');
+@import url('components/typo.css');
 
+*{
+    box-sizing: border-box;
+}
+header{
+    margin:0;
+}
+
+body{
+    background-color: var(--c-achtergrond);
+    margin:0px;
+}
+
+.titlerow {
+    margin:0;
+    margin-top: 20px;
+}
+.rowIntro{
+    margin-bottom:50px;
+}
+/* nav */
+.hamburger{
+    visibility: hidden;
+}
+.navMobile{
+    visibility: hidden;
+    position: absolute;
+    top:80px;
+    left:0;
+    background-color:var(--c-achtergrond);
+}
+.cross{
+    visibility: hidden;
+}
+body > header > div.navBar > div > img{
+    width: 200px;
+}
+.nav{
+    padding:0;
+    margin:0;
+}
+.navBar{
+    position:absolute;
+    width: 100vw;
+    left:0;
+    top:0;
+    background-color: var(--c-header-transparant) ;
+}
+.navBar .container{
+    padding-top: 0;
+    padding-bottom: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navBar .container ul{
+    margin:0;
+    display:flex;
+    list-style-type: none;
+}
+.navBar .container ul li {
+    padding: 5px 10px 5px 10px;
+}
+.navBar .container ul li:hover{
+    background-color: var(--c-header);
+}
+.headerImg{
+    
+    background-image: url(../fotos/camping1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-color: green;
+    height: 481px;
+}
+.bannerLogo{
+    position:relative;
+    top: 250px;
+    left: 120px;
+    z-index: 1;
+}
+ /* MARABOX */
+.maraLabelBox{
+    background-color: var(--c-donker-grijs);
+    min-height: 114px;
+    display:flex;
+}
+.maraLabelBox .fa-chevron-right{
+    margin: auto 15px;
+    color: var(--c-paars);
+}
+.maraLabelBox img{
+    margin: auto 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--c-rood-bruin);
+}
+
+/* QUICKACCES */
+.quickAccesDiv{
+    margin-bottom: 60px;
+}
+.quickAccesDiv .row:nth-child(1) .col:nth-child(1) .quickAccesCard .picture{
+    background-image: url('../fotos/accomodaties.jpg');
+    background-position: center 260px ;
+}
+.quickAccesDiv .row:nth-child(1) .col:nth-child(2) .quickAccesCard .picture{
+    background-image: url('../fotos/zwemmenCool.jpg');
+    background-position: center center ;
+}
+.quickAccesDiv .row:nth-child(2) .col:nth-child(1) .quickAccesCard .picture{
+    background-image: url('../fotos/lake.jpg');
+    background-position: center center ;
+}
+.quickAccesDiv .row:nth-child(2) .col:nth-child(2) .quickAccesCard .picture{
+    background-image: url('../fotos/excited.jpg');
+    background-position: center center ;
+}
+
+.quickAccesCard{
+    margin-bottom: 20px;
+}
+.quickAccesCard .picture{
+    height: 197px;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center -180px ;
+}
+
+/* PROMOBOX */
+.promoBox {
+    background-image: url('../fotos/bos.jpg');
+    background-size: cover;
+    margin:0;
+    margin-bottom: 60px;
+}
+.promoBox .col{
+    margin: auto auto;
+    margin: auto auto;
+}
+.promoBox .whiteBox{
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 30px;
+    padding-right: 40px;
+    width: 100%;
+    margin:  20px 0 20px 0;
+ 
+}
+.promoBox .waaromBox ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+.promoBox .waaromBox ul li {
+    display:flex;
+    margin-left: 15px;
+}
+.promoBox .waaromBox ul li p{
+    margin-top: 0;
+}
+.promoBox .waaromBox ul li i{
+    margin: 4px 15px 0 0;
+    color: var(--c-rood)
+}
+.promoBox .ratingBox{
+    color: var(--c-paars);
+}
+.promoBox .ratingBox .rating{
+    text-align: center;
+    margin: auto auto;
+    font-size: 30px;
+}
+/* OMGEVING */
+.map img{
+    max-width: 100%;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--c-header);
+    max-width: 100%;
+    margin-top: 60px;
+}
+.footerH2{
+    color: var(--c-donker-grijs);
+}
+footer i {
+    color: var(--c-bruin);
+    font-size: 50px;
+    
+}
+.footerContact{
+    padding-top: 40px;
+    display:flex;
+    flex-wrap:wrap;
+    max-width: 100vw;
+    justify-content: space-between;
+    margin: auto auto;
+}
+.iconTile{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+.icons{
+    display:flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.icons i{
+    margin: 0 10px;
+}
+.bottomFooter{
+    display:flex;
+    flex-direction:column;
+}
+.bottomFooter:nth-child(2){
+    margin-bottom: 30px;
+}
+footer .container .row{
+    display:flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 414px){
+    .bannerLogo{
+        display:none;
+    }
+    .headerImg{
+        height: 450px;
+    }
+    /* MARABOX */
+    .maraLabelBox{
+        background-color: var(--c-donker-grijs);
+        min-height: 93px;
+        display:flex;
+    }
+    .maraLabelBox .fa-chevron-right{
+        margin: auto 15px;
+        color: var(--c-rood-bruin);
+    }
+    .maraLabelBox img{
+        margin: auto 15px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 2px solid var(--c-rood-bruin);
+    }
+    .quickAccesCard{
+        margin-bottom: 12px;
+    }
+    /* PROMOBOX */
+    .promoBox .whiteBox{
+        margin:  50px 0 50px 0;
+        padding: 30px 40px 20px 30px;
+        width:100%;
+    }
+    /* NAVBAR */
+    .navBar{
+        background-color: var(--c-header);
+    }
+    body > header > div.navBar > div > img{
+        width:200px;
+    }
+    .nav{
+        visibility:hidden;
+    }
+    .hamburger{
+        visibility: visible;
+        
+    }
+    .navButton{
+        color: var(--c-paars);
+        justify-self: end;
+        position: absolute;
+        right: 20px;
+        font-size: 30px;
+        background-color: hsla(360, 100%, 100%, 0.5);   
+        width: 40px;
+        height: 40px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    .navButton img{
+        height: 30px;
+    }
+
+    .navMobile{
+        background-color:var(--c-donker-grijs);
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .navMobile, .navBar{
+        position: fixed;
+    }
+    .navMobile ul{
+        margin-bottom: 40px;
+        background-color: white;
+    }
+    .navMobile ul li{
+        list-style-type: none;
+        height:58px;
+    }
+    .navMobile ul li div{
+        border-bottom: 1px solid var(--c-grijs-donker-transparent);
+        display:flex; 
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+    }
+    .navMobile ul li a  {
+        color: var(--c-bruin-donker);
+        width: 300px;
+        display:flex; 
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--c-grijs-donker-transparent);
+    }
+    .navMobile ul li ul{
+        background-color: var(--c-header);
+        display:none;
+    }
+    .navMobile ul li ul li a{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .navMobile ul li ul li a i{
+        color: var(--c-donker-grijs);  
+    }
+    /* FOOTER */
+    footer i {
+        font-size: 35px;
+    }
+}
+
+
+
+@media (min-width: 414.1px){
+    .navMobile, .cross{
+        display:none;
+    }
+}

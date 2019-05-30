@@ -1,26 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500|Roboto:300,400,500&display=swap");
 
-:root {
-  /**
-   * Colour palette
-   */
-  --c-primary: hsl(190, 100%, 40%);
+:root{
+    /* Colors */
+    --c-achtergrond: #F1F1F1;
+    --c-donker-grijs: #DCDCDC;
+    --c-paars: #9940C9;
+    --c-header: #534841;
+    --c-header-transparant: hsla(23,12%,29%, 0.5);
+    --c-bruin: #816C5F;
+    --c-rood-bruin: #806060;
+    --c-rood: #FF7474;
+    --c-rood-donker: #FC3F3F;
+    --c-grijs-donker-transparent: hsla(0, 0%, 44%, 0.2);
+    --c-tekst: #788795;
+    --c-blauw-donker: #393F44;
 
-  /**
-   * Layout
-   */
-  --l-gutter: 1rem;
+    /* Fonts */
+    --f-body: 'Source Sans Pro';
+    --f-h1: 'Roboto';
+    --f-h2: 'Raleway';
+    --f-tekst: 'Raleway';
+    --f-labelTekst: 'Raleway';
+    --f-meerInfo: 'Raleway';
+    --f-navTekst: 'Roboto';
+    --f-navMobTekst: 'Raleway';
+    --f-navMobSubTekst: 'Raleway';
+    --f-footerTekst: 'Roboto';
+    --f-kleineLettertjes: 'Roboto';
+    --f-prijs: 'Roboto';
+    --f-details: 'Roboto';
 
-  /**
-   * Typography
-   */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
-
-  --t-headline: var(--t-primary);
-  --t-subtitle: var(--t-primary);
-  --t-body: var(--t-secondary);
-  --t-code: var(--t-tertiary);
+    /* grid */
+    --unit: 12px;
+    --unit-klein: 10px;
 }
 
 
