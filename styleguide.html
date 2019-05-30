@@ -2,20 +2,192 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Styleguide</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/components/grid.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/styleguide.css">
+    <title>Styleguide</title>
 </head>
 <body>
-<div class="container">
-    <h1 class="sg-title">Digital styleguide</h1>
-    <h2 class="sg-subtitle">Kleuren</h2>
-    <h2 class="sg-subtitle">Typografie</h2>
-    <h2 class="sg-subtitle">Knopppen</h2>
-    <h2 class="sg-subtitle">Formulier</h2>
-    <h2 class="sg-subtitle">Componenten</h2>
-</div>
+    <h1 class="noStyle">Styleguide</h1>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <p class="tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum rem dolores facere ipsam culpa, qui laborum non dolor, ex, recusandae esse incidunt porro mollitia maxime natus tenetur molestias provident.</p>
+    <p class="labelTekst">Lorem ipsum <strong>dolor sit amet consectetur</strong> dolor sit amet consectetur adipisicing elit. Nisi eum rem dolores facere ipsam culpa, qui laborum non dolor, ex, recusandae esse incidunt porro mollitia maxime natus tenetur molestias provident.</p>
+    <a class= "meerInfo" href="">Voor meer info links wordt deze stijl gebruikt</a>
+    <p class="navTekst">In de navigatie gebruiken we deze stijl</p>
+    <h2 class="footerH2">Dit is een h2 in de footer</h2>
+    <p class="footerTekst">In de footer gebruiken we deze stijl</p>
+    <p class="kleineLettertjes">Voor copyright gebruiken we deze stijl</p>
+    <h1 class="noStyle">Buttons</h1>
+    <div class="buttons">
+        <div class="buttonLeesMeer">
+            <div class="leesMeerBttn">
+                <div class="btnTitle tekst">
+                    <p>normaal</p>
+                </div>
+            </div>
+            <div class="leesMeerBttn hover">
+                <div class="btnTitle tekst">
+                    <p>hover</p>
+                </div>
+            </div>
+            <div class="leesMeerBttn active">
+                <div class="btnTitle tekst">
+                    <p>active</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttonBoeken">
+            <a class="boekButton" href="#">
+                <div class="btnTitle tekst">
+                    <p>Boek nu!</p>
+                </div>
+            </a>
+            <a class="boekButton hover" href="#">
+                <div class="btnTitle tekst">
+                    <p>Boek nu!</p>
+                </div>
+            </a>
+            <a class="boekButton active" href="#">
+                <div class="btnTitle tekst">
+                    <p>Boek nu!</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <h1 class="noStyle">Componenten</h1>
+    <div class="componenten">
+        <div class="boekBar">
+            <div class="prijsDiv">
+                <p class="prijs">€429</p>
+                <p class="kleineLetterPrijs">Voor 7 nachten</p>
+                <div class="prijsPerNacht">
+                    <p>€65</p> <p class="kleineLetterPrijs">/per nacht</p>
+                </div>
+            </div>
+            <a class="boekButton" href="#">
+                <div class="btnTitle tekst">
+                    <p>Boek nu!</p>
+                </div>
+            </a>
+        </div>
+        <div class="schuifKnoppen">
+            <div class="schuifBttn huren">
+                    <div class="bruinGedeelte">
+                        <p class="bttnTekst licht">huren</p>
+                    </div>
+                    <div class="witGedeelte">
+                        <p class="bttnTekst donker">kamperen</p>
+                    </div>
+                </div>
+                <div class="schuifBttn kamperen">
+                    <div class="witGedeelte">
+                        <p class="bttnTekst donker">huren</p>
+                    </div>
+                    <div class="bruinGedeelte">
+                        <p class="bttnTekst licht">kamperen</p>
+                    </div>
+                </div>
+        </div>
+        <div class="accomodatieKaart">
+            <div class="kaartImg"></div>
+            <div class="kaartGedeelte">
+                <div class="kopstuk">
+                    <h3>Standaard Kampeerplaats</h3>
+                    <div class="labels">
+                        <img src="./assets/fotos/blindicon.png" alt="">
+                        <img src="./assets/fotos/disabliltyIcon.png" alt="">
+                    </div>
+                </div>
+                <div class="tekstGedeelte">
+                    <p class='tekst'>Stuk grond van 20 m². Nabij andere kampeerplaatsen perfect voor de sociale kampeerder.</p>
+                </div>
+                <div class="laagstuk">
+                    <div class="leesMeerBttn">
+                        <div class="btnTitle tekst">
+                            <p>Lees meer</p>
+                        </div>
+                    </div>
+                    <div class="prijsDiv">
+                        <p class="prijs">€429</p>
+                        <p class="kleineLetterPrijs">Voor 7 nachten</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="coachLabel">
+            <div class="kopstuk">
+                <div class="coachPic">
+                    <img src="./assets/fotos/cropped/mara.png" alt="">
+                </div>
+                <div class="coachTekstDiv">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="coachTekst">Dit vertrek is net zoals de hele camping aangepast voor mensen met een fysieke beperking! </p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+            <a class="meerInfo" href="">Meer over toegankelijkheid</a>
+        </div>
+            <div class="reservering">
+                <div class="opties">
+                    <form action="">
+                        <div class="datums">
+                            <div>
+                                <label for="aankomstdatum" class="tekst" >Aankomst</label>
+                                <div><input type="date" name="aankomstdatum" > <i class="fas fa-calendar-minus"></i></div> 
+                            </div>
+                            <div>
+                                <label for="vertrekdatum" class="tekst" >Vertrekdatum</label>
+                                <div><input type="date" name="vertrekdatum"><i class="fas fa-calendar-minus"></i></div> 
+                            </div>
+                           
+                        </div>
+                        <div class="typeAccomodatie">
+                            <label for="accomodatieList" class="tekst"> Type Accomodatie</label>
+                            <div class="radioItems"><input type="radio" name="accomodatieList" > <p class="details">Standaard Accomodatie</p> </div>
+                            <div><input type="radio" name="accomodatieList" > <p class="details">Deluxe Accomodatie </p> </div>
+                            <div><input type="radio" name="accomodatieList" > <p class="details">Standaard Kampeerplaats </p></div>
+                            <div><input type="radio" name="accomodatieList" > <p class="details">Deluxe Kampeerplaats </p> </div>
+                            <div><input type="radio" name="accomodatieList" > <p class="details">Deluxe 2 Kampeerplaats </p> </div>
+                            
+                        </div>
+                        <div class="extras">
+                            <label for="extras" class="tekst"></label>
+                            <div>
+                               <div> <i class="fas fa-plus"></i> <p class="details">Eindschoonmaak</p></div>  <p class="details bruin">€60</p>
+                            </div> <hr> 
+                            <div>
+                                <div><i class="fas fa-times rood"></i> <p class="details">Verlaat vertrekuur (6 uur)</p></div>  <p class="details bruin">€30</p>
+                            </div> <hr> 
+                            <div>
+                                <div><i class="fas fa-plus"></i> <p class="details">Handdoekenpaket per persoon</p></div>  <p class="details bruin">€6</p>
+                            </div> <hr> 
+                        </div>
+                        <div class="leesMeerBttn">
+                            <div class="btnTitle tekst">
+                                <p>Naar volgende stap</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <div class="foto">
+            <img src="./assets/fotos/bos.jpg" alt="">
+            <div class="kleineFotos">
+                <img src="./assets/fotos/bos.jpg" alt="">
+                <img src="./assets/fotos/bos.jpg" alt="">
+                <img src="./assets/fotos/bos.jpg" alt="">
+                <img src="./assets/fotos/bos.jpg" alt="">
+                <img src="./assets/fotos/bos.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

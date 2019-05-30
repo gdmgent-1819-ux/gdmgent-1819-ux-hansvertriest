@@ -2,11 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eindopdracht UX</title>
+    <title>UX 2018-2019 | Hans Vertriest</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/components/grid.css">
     <link rel="stylesheet" href="assets/css/main.css">
+
 </head>
 <body>
+    <header>
+        <div class="headerImg">
+                <img class="bannerLogo" src="./assets/fotos/bannerLogo.png" alt="Belle Nez Camping logo.">
+        </div>
+        <div class="navMobile">
+                <div class="container">
+                    
+                    <div class="navMobile col col-sm-12" id="navMobile"> 
+                        <ul>
+                            <li> <a href=""><p class="navMobTekst">Home</p><i class="fas fa-chevron-right "></i></a>  </li>
+                            <li> 
+                                <div><p class="navMobTekst" id="dropDown">Onze Camping</p><i class="fas fa-chevron-right"></i></div>
+                                 
+                                <ul id="subMenu">
+                                    <li> <a href=""><p class="navMobSubTekst">Accomodaties</p><i class="fas fa-chevron-right "></i></a> </li>
+                                    <li> <a href=""><p class="navMobSubTekst">Faciliteiten & Recreatie</p><i class="fas fa-chevron-right "></i></a> </li>
+                                    <li> <a href=""><p class="navMobSubTekst">Foto's</p><i class="fas fa-chevron-right "></i></a> </li>
+                                    <li> <a href=""><p class="navMobSubTekst">Omgeving</p><i class="fas fa-chevron-right "></i></a> </li>
+                                </ul>
+                            </li>
+                            <li> <a href=""><p class="navMobTekst">Alles op maat</p><i class="fas fa-chevron-right .navTekst"></i></a> </li>
+                            <li> <a href=""><p class="navMobTekst">Praktisch</p><i class="fas fa-chevron-right .navTekst"></i></a> </li>
+                            <li> <a href=""><p class="navMobTekst">Contact</p><i class="fas fa-chevron-right .navTekst"></i></a> </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div id="dropdownTaal"><p class="navMobTekst">Taal/language</p>  <i class="fas fa-chevron-right .navTekst"></i></div> 
+                                <ul id="subMenuTaal">
+                                    <li> <a href=""><p class="navMobSubTekst">Engels</p></a> </li>
+                                    <li> <a href=""><p class="navMobSubTekst">Frans</p></a> </li>
+                                    <li> <a href=""><p class="navMobSubTekst">Nederlands</p><i class="fas fa-chevron-right "></i></a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+
+                </div>
+            </div>
+        <div class="navBar">
+            <div class="container">
+                <img src="./assets/fotos/logo.png" alt="Belle Nez logo.">
+                
+                <div class="navButton hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="navButton cross" id="cross">
+                    <img src="./assets/fotos/cross.png" alt="">
+                </div> 
+                
+                <div class="nav col col-7" id="nav">
+                    <ul>
+                        <li> <a href=""> <p class="navTekst">Home</p></a></li>
+                        <li> <a href="" id="dropDownItem"><p class="navTekst">Onze Camping</p></a> </li>
+                        <li> <a href=""><p class="navTekst">Alles op maat</p></a> </li>
+                        <li> <a href=""><p class="navTekst">Praktisch</p></a> </li>
+                        <li> <a href=""> <p class="navTekst">Contact</p></a></li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+    </header>
+    <main>
+            <div class="container">
+                    <div class="row titlerow">
+                        <div class="col col-12 col-sm-12 ">
+                            <h1>De camping voor iedereen</h1>
+                            <h2>Welkom bij onze camping!</h2></div>
+                            </div>
+                    <div class="row rowIntro">
+                        <div class="col col-6 col-sm-12">
+                            <p class="tekst">Hier bij camping Belle Nez staan wij elke dag paraat om iedereen een uitstekende kampeerervaring aan te bieden.
+                                </p>
+                            <p class="tekst">Bekijk zeker de rest van onze website en misschien zien we jou terug op onze camping!</p>
+                        </div>
+                        <div class="col col-6 col-sm-12">
+                            <div class="maraLabelBox">
+                                <img  src="./assets/fotos/cropped/mara.png" alt="Mara, onze toegankelijkheidscoach">
+                                <p class="labelTekst">Leer meer over hoe wij <strong>mensen met een beperking</strong> een wonderlijke vakantie aanbieden.</p>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                             
+                        </div>
+                    </div> 
+                    <div class="quickAccesDiv">
+                        <div class="row">
+                                <div class="col  col-6 col-sm-12">
+                                    <div class="quickAccesCard ">
+                                        <div class="picture"></div>
+                                        <a class="quickAccesButton" href="#">
+                                            <div class="icon"><i class="fas fa-bed"></i></div>
+                                            <div class="btnTitle tekst"><p>Accomodaties</p></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col  col-6 col-sm-12">
+                                    <div class="quickAccesCard ">
+                                        <div class="picture"></div>
+                                        <a class="quickAccesButton" href="#">
+                                            <div class="icon"><i class="fas fa-bed"></i></div>
+                                            <div class="btnTitle tekst"><p>Recreatie</p></div>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col  col-6 col-sm-12">
+                                    <div class="quickAccesCard ">
+                                        <div class="picture"></div>
+                                        <a class="quickAccesButton" href="#">
+                                            <div class="icon"><i class="fas fa-bed"></i></div>
+                                            <div class="btnTitle tekst"><p>Omgeving</p></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col  col-6 col-sm-12">
+                                    <div class="quickAccesCard ">
+                                        <div class="picture"></div>
+                                        <a class=" boekButton" href="#">
+                                            <div class="btnTitle tekst">
+                                                <p>Boek nu!</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promoBox">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-sm-12 col-8 ">
+                                <div class="waaromBox whiteBox">
+                                    <h2>Waarom Belle Nez Camping?</h2>
+                                    <ul>
+                                        <li class="checkItem tekst"> <i class="fas fa-check"></i> <p></i>Een camping dat ook <strong>toegankelijk</strong> is voor mensen met een beperking</p> </li>
+                                        <li class="checkItem tekst"> <i class="fas fa-check"></i> <p> Inclusie voor <strong>iedereen</strong>  die opzoek is naar een mooie vakantie</p></li>
+                                        <li class="checkItem tekst"> <i class="fas fa-check"></i> <p>Een gemotiveerd team die er alles aan doet om u de <strong>leukste vakantie</strong> aan te bieden</p></li>
+                                        <li class="checkItem tekst"> <i class="fas fa-check"></i> <p>Een camping met een <strong>prachtige omgeving</strong>  met veel natuur en culuur</p></li>
+                                    </ul>
+                                </div>
+                                <div class="ratingBox whiteBox">
+                                    <h2>Wat klanten zeggen over ons...</h2>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div> 
+                    </div>   
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><h1>Locatie</h1> </div>
+                            
+                    </div>
+                    <div class="row">
+                            <div class="col col-5 col-sm-12">
+                                <p class="tekst ">Onze camping is gelegen in een prachtig gebied in het Westen van Frankrijk, nabij het gezellig stadje Tirez.</p>
+                                <a href="#" class="meerInfo">Meer over de omgeving</a> 
+                            </div>
+                            <div class="col col-7 col-sm-12">
+                                <div class="map">
+                                    <img src="assets/fotos/map.png" alt="Kaartje van de ligging van onze camping.">
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-10 col-10 footerContact">
+                    <div class="iconTile col-sm-4"> <i class="fas fa-phone"></i> <p class="footerTekst">+33 142 96 70 00</p> </div>
+                    <div class="iconTile col-sm-4"> <i class="fas fa-envelope"></i> <p class="footerTekst">info@bellenez.com</p>  </div>
+                    <div class="iconTile col-sm-4"> <i class="fas fa-home"></i> <p class="footerTekst">Balieustraat 184, 8475 Malqui, Frankrijk</p>  </div>
+                </div>
+                <div class="col bottomFooter col-sm-10 col-6">
+                    <h2 class="footerH2">Betaalmogelijkheden</h2>
+                    <div class="col-sm-6 icons"> <i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-paypal"></i></div>
+                </div>
+                
+                <div class="col bottomFooter col-sm-10 col-6">
+                    <h2 class="footerH2">Volg ons op</h2>
+                    <div class="col-sm-6  icons"><i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i><i class="fab fa-youtube"></i></div>
+                </div>
+                <p class="kleineLettertjes">Privacybeleid | Belle Neze Camping ©</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src='js/script.js'></script>
 </body>
 </html>
