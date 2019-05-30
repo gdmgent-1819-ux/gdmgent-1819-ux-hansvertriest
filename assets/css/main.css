@@ -45,7 +45,7 @@ body > header > div.navBar > div > img{
 }
 .navBar{
     position:absolute;
-    width: 100vw;
+    width: 100%;
     left:0;
     top:0;
     background-color: var(--c-header-transparant) ;
